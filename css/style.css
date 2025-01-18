@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../image/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.Container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 550px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container::-webkit-scrollbar {
+  display: none;
+}
+
+.Container h1 {
+  margin: 20px 0;
+  font-size: 28px;
+  color: white;
+}
+
+.Container #descriPara {
+  font-size: 14px;
+  font-weight: lighter;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  margin: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #304730;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+button:hover {
+  background-color: #020902;
+}
+
+p {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#displayFinalMarks,
+#displayFinalPercentage {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+#clearBtn {
+  padding: 10px 20px;
+  background-color: #364b98;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 350px;
+}
+
+#clearBtn:hover {
+  background-color: #2934d7;
+}
+
+#gradePara {
+  font-weight: lighter;
+  font-size: 14px;
+}
+#gradePara a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+#gradePara a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    max-height: 90vh;
+    padding: 10px;
+    max-width: 88vw;
+  }
+
+  select,
+  input[type="number"],
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

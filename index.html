@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduGrade</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="Container">
+    <h1>EduGrade</h1>
+    <p id="descriPara">
+      EduGrade is a web application that helps you calculate grades, total
+      marks, and final scores. Try it now and stay on top of your grades!
+    </p>
+
+    <!-- Subject 1 -->
+    <select name="" id="dropDown1">
+      <option selected disabled>Choose Your First Subject</option>
+      <option value="Hindi">Hindi</option>
+      <option value="English">English</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Science">Science</option>
+      <option value="Social Studies">Social Studies</option>
+      <option value="Accountancy">Accountancy</option>
+      <option value="Business Studies">Business Studies</option>
+      <option value="Economics">Economics</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Biology">Biology</option>
+      <option value="HIstory">History</option>
+      <option value="Political Science">Political Science</option>
+    </select>
+
+    <input type="number" placeholder="Enter Your Marks" id="subMark1" min="0" max="100" />
+    <button type="submit" id="calstuGrade1">Calculate Grade</button>
+    <p id="displayGrade1">Grade:</p>
+    <br />
+
+    <!-- Subject 2 -->
+    <select name="" id="dropDown2">
+      <option selected disabled>Choose Your Second Subject</option>
+      <option value="Hindi">Hindi</option>
+      <option value="English">English</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Science">Science</option>
+      <option value="Social Studies">Social Studies</option>
+      <option value="Accountancy">Accountancy</option>
+      <option value="Business Studies">Business Studies</option>
+      <option value="Economics">Economics</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Biology">Biology</option>
+      <option value="HIstory">History</option>
+      <option value="Political Science">Political Science</option>
+    </select>
+
+    <input type="number" placeholder="Enter Your Marks" id="subMark2" min="0" max="100" />
+    <button type="submit" id="calstuGrade2">Calculate Grade</button>
+    <p id="displayGrade2">Grade:</p>
+    <br />
+
+    <!-- Subject 3 -->
+    <select name="" id="dropDown3">
+      <option selected disabled>Choose Your Third Subject</option>
+      <option value="Hindi">Hindi</option>
+      <option value="English">English</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Science">Science</option>
+      <option value="Social Studies">Social Studies</option>
+      <option value="Accountancy">Accountancy</option>
+      <option value="Business Studies">Business Studies</option>
+      <option value="Economics">Economics</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Biology">Biology</option>
+      <option value="HIstory">History</option>
+      <option value="Political Science">Political Science</option>
+    </select>
+
+    <input type="number" placeholder="Enter Your Marks" id="subMark3" min="0" max="100" />
+    <button type="submit" id="calstuGrade3">Calculate Grade</button>
+    <p id="displayGrade3">Grade:</p>
+    <br />
+
+    <!-- Subject 4 -->
+    <select name="" id="dropDown4">
+      <option selected disabled>Choose Your Fourth Subject</option>
+      <option value="Hindi">Hindi</option>
+      <option value="English">English</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Science">Science</option>
+      <option value="Social Studies">Social Studies</option>
+      <option value="Accountancy">Accountancy</option>
+      <option value="Business Studies">Business Studies</option>
+      <option value="Economics">Economics</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Biology">Biology</option>
+      <option value="HIstory">History</option>
+      <option value="Political Science">Political Science</option>
+    </select>
+
+    <input type="number" placeholder="Enter Your Marks" id="subMark4" min="0" max="100" />
+    <button type="submit" id="calstuGrade4">Calculate Grade</button>
+    <p id="displayGrade4">Grade:</p>
+    <br />
+
+    <!-- student 5 -->
+    <select name="" id="dropDown5">
+      <option selected disabled>Choose Your Fifth Subject</option>
+      <option value="Hindi">Hindi</option>
+      <option value="English">English</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Science">Science</option>
+      <option value="Social Studies">Social Studies</option>
+      <option value="Accountancy">Accountancy</option>
+      <option value="Business Studies">Business Studies</option>
+      <option value="Economics">Economics</option>
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Biology">Biology</option>
+      <option value="HIstory">History</option>
+      <option value="Political Science">Political Science</option>
+    </select>
+
+    <input type="number" placeholder="Enter Your Marks" id="subMark5" min="0" max="100" />
+    <button type="submit" id="calstuGrade5">Calculate Grade</button>
+    <p id="displayGrade5">Grade:</p>
+    <br />
+
+    <!-- To calculate Final marks -->
+    <button type="submit" id="calFinalMarks">Calculate Final Marks</button>
+    <p id="displayFinalMarks">Final Marks:</p>
+    <br />
+
+    <!-- To calculate Final Percentage -->
+    <button type="submit" id="calFinalPercentage">
+      Calculate Final Percenatage
+    </button>
+    <p id="displayFinalPercentage">Final Percenatage:</p>
+    <br />
+
+    <!-- To clear input and result -->
+    <button type="reset" id="clearBtn">Clear</button>
+
+    <p id="gradePara">
+      Click <a href="page/gradessys.html">here</a> to know about EduGrade grade criteria
+    </p>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
