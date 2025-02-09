@@ -34,153 +34,242 @@ let dropDown5 = document.getElementById("dropDown5");
 
 // Calculate Grade for Subject 1
 calstuGrade1.addEventListener("click", () => {
-  let subjectMark1 = Number(subMark1.value);
+  let validateDropdown1 = dropDown1.value;
+  let subjectMark1 = subMark1.value;
 
-  if (subjectMark1 == "") {
-    alert("Please Enter Your Marks");
+  if (!validateDropdown1 && !subjectMark1) {
+    displayGrade1.innerText = "Please choose your subject and enter your marks";
     return;
   }
 
-  if (subjectMark1 === 100) {
+  if (!validateDropdown1) {
+    displayGrade1.innerText = "Please choose your subject";
+    return;
+  }
+
+  if (!subjectMark1) {
+    displayGrade1.innerText = "Please Enter Your Marks";
+    return;
+  }
+
+  let subjectGrade1 = parseFloat(subjectMark1);
+
+  if (subjectGrade1 === 100) {
     displayGrade1.textContent = "Grade: " + "A++";
-  } else if (subjectMark1 >= 90 && subjectMark1 <= 99) {
+  } else if (subjectGrade1 >= 90 && subjectGrade1 <= 99) {
     displayGrade1.textContent = "Grade: " + "A";
-  } else if (subjectMark1 >= 80 && subjectMark1 <= 89) {
+  } else if (subjectGrade1 >= 80 && subjectGrade1 <= 89) {
     displayGrade1.textContent = "Grade: " + "B";
-  } else if (subjectMark1 >= 70 && subjectMark1 <= 79) {
+  } else if (subjectGrade1 >= 70 && subjectGrade1 <= 79) {
     displayGrade1.textContent = "Grade: " + "C";
-  } else if (subjectMark1 >= 60 && subjectMark1 <= 69) {
+  } else if (subjectGrade1 >= 60 && subjectGrade1 <= 69) {
     displayGrade1.textContent = "Grade: " + "D";
-  } else if (subjectMark1 >= 50 && subjectMark1 <= 59) {
+  } else if (subjectGrade1 >= 50 && subjectGrade1 <= 59) {
     displayGrade1.textContent = "Grade: " + "E";
-  } else if (subjectMark1 >= 0 && subjectMark1 <= 49) {
+  } else if (subjectGrade1 >= 0 && subjectGrade1 <= 49) {
     displayGrade1.textContent = "Grade: " + "F";
   } else {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayGrade1.innerText = "Invalid Marks! Marks must be between 0 and 100";
   }
 });
 
 // Calculate Grade for Subject 2
 calstuGrade2.addEventListener("click", () => {
-  let subjectMark2 = Number(subMark2.value);
+  let validateDropdown2 = dropDown2.value;
+  let subjectMark2 = subMark2.value;
 
-  if (subjectMark2 == "") {
-    alert(" Please Enter Your Marks");
+  if (!validateDropdown2 && !subjectMark2) {
+    displayGrade2.innerText = "Please choose your subject and enter your marks";
     return;
   }
 
-  if (subjectMark2 === 100) {
+  if (!validateDropdown2) {
+    displayGrade2.innerText = "Please choose your subject";
+    return;
+  }
+
+  if (!subjectMark2) {
+    displayGrade2.innerText = "Please enter your marks";
+    return;
+  }
+
+  let subjectGrade2 = parseFloat(subjectMark2);
+
+  if (subjectGrade2 === 100) {
     displayGrade2.textContent = "Grade: " + "A++";
-  } else if (subjectMark2 >= 90 && subjectMark2 <= 99) {
+  } else if (subjectGrade2 >= 90 && subjectGrade2 <= 99) {
     displayGrade2.textContent = "Grade: " + "A";
-  } else if (subjectMark2 >= 80 && subjectMark2 <= 89) {
+  } else if (subjectGrade2 >= 80 && subjectGrade2 <= 89) {
     displayGrade2.textContent = "Grade: " + "B";
-  } else if (subjectMark2 >= 70 && subjectMark2 <= 79) {
+  } else if (subjectGrade2 >= 70 && subjectGrade2 <= 79) {
     displayGrade2.textContent = "Grade: " + "C";
-  } else if (subjectMark2 >= 60 && subjectMark2 <= 69) {
+  } else if (subjectGrade2 >= 60 && subjectGrade2 <= 69) {
     displayGrade2.textContent = "Grade: " + "D";
-  } else if (subjectMark2 >= 50 && subjectMark2 <= 59) {
+  } else if (subjectGrade2 >= 50 && subjectGrade2 <= 59) {
     displayGrade2.textContent = "Grade: " + "E";
-  } else if (subjectMark2 >= 0 && subjectMark2 <= 49) {
+  } else if (subjectGrade2 >= 0 && subjectGrade2 <= 49) {
     displayGrade2.textContent = "Grade: " + "F";
   } else {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayGrade2.innerText = "Invalid Marks! Marks must be between 0 and 100";
   }
 });
 
 // Calculate Grade for Subject 3
 calstuGrade3.addEventListener("click", () => {
-  let subjectMark3 = Number(subMark3.value);
+  let validateDropdown3 = dropDown3.value;
+  let subjectMark3 = subMark3.value;
 
-  if (subjectMark3 == "") {
-    alert(" Please Enter Your Marks");
+  if (!validateDropdown3 && !subjectMark3) {
+    displayGrade3.innerText = "Please choose your subject and enter your marks";
     return;
   }
 
-  if (subjectMark3 === 100) {
+  if (!validateDropdown3) {
+    displayGrade3.innerText = "Please choose your subject";
+    return;
+  }
+
+  if (!subjectMark3) {
+    displayGrade3.innerText = "Please Enter Your Marks";
+    return;
+  }
+
+  let subjectGrade3 = parseFloat(subjectMark3);
+
+  if (subjectGrade3 === 100) {
     displayGrade3.textContent = "Grade: " + "A++";
-  } else if (subjectMark3 >= 90 && subjectMark3 <= 99) {
+  } else if (subjectGrade3 >= 90 && subjectGrade3 <= 99) {
     displayGrade3.textContent = "Grade: " + "A";
-  } else if (subjectMark3 >= 80 && subjectMark3 <= 89) {
+  } else if (subjectGrade3 >= 80 && subjectGrade3 <= 89) {
     displayGrade3.textContent = "Grade: " + "B";
-  } else if (subjectMark3 >= 70 && subjectMark3 <= 79) {
+  } else if (subjectGrade3 >= 70 && subjectGrade3 <= 79) {
     displayGrade3.textContent = "Grade: " + "C";
-  } else if (subjectMark3 >= 60 && subjectMark3 <= 69) {
+  } else if (subjectGrade3 >= 60 && subjectGrade3 <= 69) {
     displayGrade3.textContent = "Grade: " + "D";
-  } else if (subjectMark3 >= 50 && subjectMark3 <= 59) {
+  } else if (subjectGrade3 >= 50 && subjectGrade3 <= 59) {
     displayGrade3.textContent = "Grade: " + "E";
-  } else if (subjectMark3 >= 0 && subjectMark3 <= 49) {
+  } else if (subjectGrade3 >= 0 && subjectGrade3 <= 49) {
     displayGrade3.textContent = "Grade: " + "F";
   } else {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayGrade3.innerText = "Invalid Marks! Marks must be between 0 and 100";
   }
 });
 
 // Calculate Grade for Subject 4
 calstuGrade4.addEventListener("click", () => {
-  let subjectMark4 = Number(subMark4.value);
+  let validateDropdown4 = dropDown4.value;
+  let subjectMark4 = subMark4.value;
 
-  if (subjectMark4 == "") {
-    alert(" Please Enter Your Marks");
+  if (!validateDropdown4 && !subjectMark4) {
+    displayGrade4.innerText = "Please choose your subject and enter your marks";
     return;
   }
 
-  if (subjectMark4 === 100) {
+  if (!validateDropdown4) {
+    displayGrade4.innerText = "Please choose your subject";
+    return;
+  }
+
+  if (!subjectMark4) {
+    displayGrade4.innerText = "Please Enter Your Marks";
+    return;
+  }
+
+  let subjectGrade4 = parseFloat(subjectMark4);
+
+  if (subjectGrade4 === 100) {
     displayGrade4.textContent = "Grade: " + "A++";
-  } else if (subjectMark4 >= 90 && subjectMark4 <= 99) {
+  } else if (subjectGrade4 >= 90 && subjectGrade4 <= 99) {
     displayGrade4.textContent = "Grade: " + "A";
-  } else if (subjectMark4 >= 80 && subjectMark4 <= 89) {
+  } else if (subjectGrade4 >= 80 && subjectGrade4 <= 89) {
     displayGrade4.textContent = "Grade: " + "B";
-  } else if (subjectMark4 >= 70 && subjectMark4 <= 79) {
+  } else if (subjectGrade4 >= 70 && subjectGrade4 <= 79) {
     displayGrade4.textContent = "Grade: " + "C";
-  } else if (subjectMark4 >= 60 && subjectMark4 <= 69) {
+  } else if (subjectGrade4 >= 60 && subjectGrade4 <= 69) {
     displayGrade4.textContent = "Grade: " + "D";
-  } else if (subjectMark4 >= 50 && subjectMark4 <= 59) {
+  } else if (subjectGrade4 >= 50 && subjectGrade4 <= 59) {
     displayGrade4.textContent = "Grade: " + "E";
-  } else if (subjectMark4 >= 0 && subjectMark4 <= 49) {
+  } else if (subjectGrade4 >= 0 && subjectGrade4 <= 49) {
     displayGrade4.textContent = "Grade: " + "F";
   } else {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayGrade4.innerText = "Invalid Marks! Marks must be between 0 and 100";
   }
 });
 
 // Calculate Grade for Subject 5
 calstuGrade5.addEventListener("click", () => {
-  let subjectMark5 = Number(subMark5.value);
+  let validateDropdown5 = dropDown5.value;
+  let subjectMark5 = subMark5.value;
 
-  if (subjectMark5 == "") {
-    alert(" Please Enter Your Marks");
+  if (!validateDropdown5 && !subjectMark5) {
+    displayGrade5.innerText = "Please choose your subject and enter your marks";
     return;
   }
 
-  if (subjectMark5 === 100) {
+  if (!validateDropdown5) {
+    displayGrade5.innerText = "Please choose your subject";
+    return;
+  }
+
+  if (!subjectMark5) {
+    displayGrade5.innerText = "Please Enter Your Marks";
+    return;
+  }
+
+  let subjectGrade5 = parseFloat(subjectMark5);
+
+  if (subjectGrade5 === 100) {
     displayGrade5.textContent = "Grade: " + "A++";
-  } else if (subjectMark5 >= 90 && subjectMark5 <= 99) {
+  } else if (subjectGrade5 >= 90 && subjectGrade5 <= 99) {
     displayGrade5.textContent = "Grade: " + "A";
-  } else if (subjectMark5 >= 80 && subjectMark5 <= 89) {
+  } else if (subjectGrade5 >= 80 && subjectGrade5 <= 89) {
     displayGrade5.textContent = "Grade: " + "B";
-  } else if (subjectMark5 >= 70 && subjectMark5 <= 79) {
+  } else if (subjectGrade5 >= 70 && subjectGrade5 <= 79) {
     displayGrade5.textContent = "Grade: " + "C";
-  } else if (subjectMark5 >= 60 && subjectMark5 <= 69) {
+  } else if (subjectGrade5 >= 60 && subjectGrade5 <= 69) {
     displayGrade5.textContent = "Grade: " + "D";
-  } else if (subjectMark5 >= 50 && subjectMark5 <= 59) {
+  } else if (subjectGrade5 >= 50 && subjectGrade5 <= 59) {
     displayGrade5.textContent = "Grade: " + "E";
-  } else if (subjectMark5 >= 0 && subjectMark5 <= 49) {
+  } else if (subjectGrade5 >= 0 && subjectGrade5 <= 49) {
     displayGrade5.textContent = "Grade: " + "F";
   } else {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayGrade5.innerText = "Invalid Marks! Marks must be between 0 and 100";
   }
 });
 
 // To calculate Final Marks
 calFinalMarks.addEventListener("click", () => {
-  let subject1 = Number(subMark1.value);
-  let subject2 = Number(subMark2.value);
-  let subject3 = Number(subMark3.value);
-  let subject4 = Number(subMark4.value);
-  let subject5 = Number(subMark5.value);
+  let subject1 = parseFloat(subMark1.value);
+  let subject2 = parseFloat(subMark2.value);
+  let subject3 = parseFloat(subMark3.value);
+  let subject4 = parseFloat(subMark4.value);
+  let subject5 = parseFloat(subMark5.value);
 
   // validate to input
+
+  if (
+    (!dropDown1.value && !subMark1.value) ||
+    (!dropDown2.value && !subMark2.value) ||
+    (!dropDown3.value && !subMark3.value) ||
+    (!dropDown4.value && !subMark4.value) ||
+    (!dropDown5.value && !subMark5.value)
+  ) {
+    displayFinalMarks.innerText =
+      "Please choose your subjects and enter your marks";
+    return;
+  }
+
+  if (
+    !dropDown1.value ||
+    !dropDown2.value ||
+    !dropDown3.value ||
+    !dropDown4.value ||
+    !dropDown5.value
+  ) {
+    displayFinalMarks.innerText = "Please choose all subjects";
+    return;
+  }
+
   if (
     !subMark1.value ||
     !subMark2.value ||
@@ -188,7 +277,7 @@ calFinalMarks.addEventListener("click", () => {
     !subMark4.value ||
     !subMark5
   ) {
-    alert("Please Enter all Marks");
+    displayFinalMarks.innerText = "Please Enter all Marks";
     return;
   }
 
@@ -204,25 +293,47 @@ calFinalMarks.addEventListener("click", () => {
     subMark5.value < 0 ||
     subMark5.value > 100
   ) {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayFinalMarks.innerText =
+      "Invalid Marks! Marks must be between 0 and 100";
     return;
   }
 
   let finalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
 
-  displayFinalMarks.textContent =
-    "Your Final Marks is: " + finalMarks + " out of 500";
+  displayFinalMarks.textContent = `Your final marks is: ${finalMarks} out of 500`;
 });
 
 // To calculate the final Percentage
 calFinalPercentage.addEventListener("click", () => {
-  let sub1 = Number(subMark1.value);
-  let sub2 = Number(subMark2.value);
-  let sub3 = Number(subMark3.value);
-  let sub4 = Number(subMark4.value);
-  let sub5 = Number(subMark5.value);
+  let sub1 = parseFloat(subMark1.value);
+  let sub2 = parseFloat(subMark2.value);
+  let sub3 = parseFloat(subMark3.value);
+  let sub4 = parseFloat(subMark4.value);
+  let sub5 = parseFloat(subMark5.value);
 
   // validate to input
+  if (
+    (!dropDown1.value && !subMark1.value) ||
+    (!dropDown2.value && !subMark2.value) ||
+    (!dropDown3.value && !subMark3.value) ||
+    (!dropDown4.value && !subMark4.value) ||
+    (!dropDown5.value && !subMark5.value)
+  ) {
+    displayFinalPercentage.innerText = "Please select your subjects and marks";
+    return;
+  }
+
+  if (
+    !dropDown1.value ||
+    !dropDown2.value ||
+    !dropDown3.value ||
+    !dropDown4.value ||
+    !dropDown5.value
+  ) {
+    displayFinalPercentage.innerText = "Please select all subjects";
+    return;
+  }
+
   if (
     !subMark1.value ||
     !subMark2.value ||
@@ -230,7 +341,7 @@ calFinalPercentage.addEventListener("click", () => {
     !subMark4.value ||
     !subMark5
   ) {
-    alert("Please Enter all Marks");
+    displayFinalPercentage.innerText = "Please Enter all Marks";
     return;
   }
 
@@ -246,7 +357,8 @@ calFinalPercentage.addEventListener("click", () => {
     subMark5.value < 0 ||
     subMark5.value > 100
   ) {
-    alert("Invalid Marks! Marks must be between 0 and 100");
+    displayFinalPercentage.innerText =
+      "Invalid Marks! Marks must be between 0 and 100";
     return;
   }
 
@@ -255,8 +367,7 @@ calFinalPercentage.addEventListener("click", () => {
   const totalSubMark = 500;
   let totalPercentage = (totalMarks * perSubMark) / totalSubMark;
 
-  displayFinalPercentage.textContent =
-    "Your Final Percentage is: " + totalPercentage + "%";
+  displayFinalPercentage.textContent = `Your final percentage is ${totalPercentage}%`;
 });
 
 // To clear input and result
