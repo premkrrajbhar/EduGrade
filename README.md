@@ -4,8 +4,8 @@ EduGrade is a web application designed to help students calculate their grades, 
 
 ## 🎓 Demo Screenshot
 
-![Screenshot of Project](assets/screenshot1.png)
-![Screenshot of Project](assets/screenshot2.png)
+![Screenshot of Project](assets/screenshot/screenshot1.png)
+![Screenshot of Project](assets/screenshot/screenshot2.png)
 
 ## 🔗 Live Demo
 
@@ -39,14 +39,15 @@ Check out the app live here: **[EduGrade](https://premkrrajbhar.github.io/EduGra
 
 ```bash
    git clone https://github.com/premkrrajbhar/EduGrade.git
-   ```
+```
 
 - Step 2: Navigate to the project folder:
- ```bash
-   cd EduGrade
-   ```
 
-- Step 3: Open the ```index.html``` file in your web browser to start using the app.
+```bash
+  cd EduGrade
+```
+
+- Step 3: Open the `index.html` file in your web browser to start using the app.
 
 ## 🤝 Contributing
 
