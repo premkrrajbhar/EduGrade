@@ -33,6 +33,28 @@ Check out the app live here: **[EduGrade](https://premkrrajbhar.github.io/EduGra
 - **Calculate Final Percentage**: Click the "Calculate Final Percentage" button to get your overall percentage.
 - **Clear All**: Click the "Clear" button to reset all input fields and results.
 
+## 📂 Project Structure
+
+```
+├── README.md
+├── assets/
+│   ├── favicon/
+│   │   └── edugrade-favicon.png
+│   └── screenshot/
+│       ├── screenshot1.png
+│       └── screenshot2.png
+├── css/
+│   ├── grade.css
+│   └── style.css
+├── image/
+│   └── bg-img.jpg
+├── index.html
+├── page/
+│   └── gradessys.html
+└── script/
+    └── script.js
+```
+
 ## 🚀 How to Run Locally
 
 - Step 1: Clone the repository:
